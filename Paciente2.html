@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laudo Médico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-family: Rubik;
+            font-size: 28px;
+            color: #007bff; /* Cor azul para os títulos */
+            
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin-top: 8px;
+        }
+
+        .progress-bar {
+            color: #fff;
+            text-align: center;
+            line-height: 24px;
+            background-color: #17a2b8; /* Cor de "Laudando" para toda a barra */
+        }
+
+        .btn-outline-primary {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .text-custom {
+            color: #343a40; /* Cor personalizada para o texto */
+        }
+        .card{
+            border-radius: 40px;
+            width: 1281px;
+            
+        }
+        .card img{
+            margin: 8px;
+        }
+        p{
+            font-family: Rubik;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 30.18px;
+            text-align: left;
+            color: #A1A1A1;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <!-- Botão Voltar -->
+        <div class="mb-3">
+            <a href="#" class="btn btn-link">
+                <i class="fas fa-arrow-left"></i> Voltar
+            </a>
+        </div>
+
+        <!-- Paciente Section -->
+        <div class="card mb-3 ">
+            <div style="padding:40px"class="card-body rounded-pill">
+                <img src="img/paciente.png" alt="Paciente Icon" class="icon">
+                <h5 class="card-title">Paciente</h5>
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <p class="text-custom"><strong>Nome do Paciente:</strong> </p>
+                        <p>ROSELAI DE MORAIS PAIVA E SILVA</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-custom"><strong>Sexo:</strong> </p>
+                        <p>Feminino</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-custom"><strong>Nascimento:</strong> </p>
+                        <p>03/10/1963</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Bar -->
+         <div class="card-body rounded-pill">
+            <div class="progress mb-3">
+                <div class="progress-bar" style="width: 33%;">Esperando</div>
+                <div class="progress-bar" style="width: 34%;">Laudando</div>
+                <div class="progress-bar" style="width: 33%;">Finalizado</div>
+            </div>
+         </div>
+        
+
+        <!-- Resultados Section -->
+        <div  style="height: 502px"class="card">
+            <div style="margin: 40px;"class="card-body">
+                <img src="img/resultados.png" alt="Resultados Icon" class="icon">
+                <h5 class="card-title">Resultados</h5>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <p class="text-custom"><strong>Descrição do Exame:</strong> </p>
+                        <p>Momografia digital bilateral</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="text-custom"><strong>Modalidade:</strong> </p>
+                        <p>MG</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="text-custom"><strong>Data do Exame:</strong> </p>
+                        <p>03/10/1963</p>
+                    </div>
+                </div>
+                <!-- Arquivo Section -->
+                <div class="mt-3">
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-download mr-2"></i> Imagens do Exame
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FontAwesome and Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
